@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:id="@+id/group">
+        <item android:title="Home" android:id="@+id/home" android:icon="@drawable/ic_home"></item>
+        <item android:title="Spendings Tracker" android:id="@+id/spendings" android:icon="@drawable/rupee"></item>
+        <item android:title="Split" android:id="@+id/split"
+            android:icon="@drawable/ic_split"></item>
+        <item android:title="Invite Link" android:id="@+id/inviteDisplay" android:icon="@drawable/invite_2"></item>
+
+    </group>
+
+
+<group android:id="@+id/group_divider">
+
+        <item android:title="Edit Profile" android:id="@+id/contact_us" android:icon="@drawable/profile"></item>
+        <item android:title="Logout" android:id="@+id/logout" android:icon="@drawable/logout"></item>
+
+</group>
+</menu>

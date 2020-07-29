@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha="1"
+    android:orientation="vertical"
+    tools:context=".Spendings">
+
+    <Toolbar
+        android:id="@+id/toolbar_spendings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="Balance"
+        app:titleTextColor="@color/white"
+        android:background="@color/fui_transparent">
+
+    </Toolbar>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#03A9F4"
+
+            app:tabTextColor="#ffffff"
+            app:tabBackground="@color/fui_transparent"
+            android:backgroundTint="@color/fui_transparent">
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tab_spendings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Expenses" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tab_analytics"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Analytics" />
+
+        </com.google.android.material.tabs.TabLayout>
+    </androidx.viewpager.widget.ViewPager>
+
+</LinearLayout>

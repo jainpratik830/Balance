@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AnalyticsFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#4Affffff"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:paddingBottom="0dp"
+                    android:text="Select Category"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+
+
+                <Spinner
+                    android:id="@+id/category_expenses"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:popupBackground="@drawable/background_gradient" />
+
+
+            </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:paddingBottom="0dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <EditText
+                android:id="@+id/start_date_analytics"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/fui_transparent"
+                android:clickable="true"
+                android:drawableLeft="@drawable/ic_date"
+                android:focusable="false"
+                android:hint=" Start Date"
+                android:padding="8dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/end_date_analtics"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@color/fui_transparent"
+                android:clickable="true"
+                android:drawableLeft="@drawable/ic_date"
+                android:focusable="false"
+                android:hint=" End Date"
+                android:padding="8dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/button_go"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="0"
+                android:background="@drawable/shape"
+                android:gravity="center"
+                android:text="GO"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+
+        </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/editText_totalExpense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+
+                android:layout_marginRight="20dp"
+                android:background="@drawable/rec_box"
+                android:fontFamily="@font/sriracha"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textSize="18dp"
+                android:text="Total Expenses : "
+                android:textColor="@color/green2"
+                android:focusable="false"/>
+
+
+        </RelativeLayout>
+
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp"
+            android:id="@+id/barChart"
+            android:layout_gravity="center"
+            android:visibility="gone"/>
+
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:layout_marginTop="20dp"
+            android:layout_width="300dp"
+            android:layout_height="400dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp"
+            android:id="@+id/pie_chart_withdate"
+            android:layout_gravity="center"
+            android:visibility="gone"/>
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:layout_marginTop="20dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginLeft="12dp"
+        android:id="@+id/pie_chart"
+        android:layout_gravity="center"/>
+
+<!--        <com.anychart.AnyChartView-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_marginTop="50dp"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="600dp"-->
+<!--            android:id="@+id/pie_chart"/>-->
+
+
+    </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
+

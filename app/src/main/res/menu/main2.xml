@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <item
+        android:id="@+id/spinner_sort"
+        android:icon="@drawable/ic_sort"
+        android:title="Sort"
+        app:showAsAction="ifRoom"
+        android:orderInCategory="100"
+        >
+
+        <menu >
+
+            <item android:id="@+id/sort_by"
+                android:title="Sort By"
+                app:showAsAction="never"/>
+            <item android:id="@+id/name_asc"
+                android:title="Name (Asc) "
+                app:showAsAction="never"/>
+            <item android:id="@+id/name_desc"
+                android:title="Name (Desc) "
+                app:showAsAction="never"/>
+            <item android:id="@+id/date_asc"
+                android:title="Date (Asc) "
+                app:showAsAction="never"/>
+            <item android:id="@+id/date_desc"
+                android:title="Date (Desc) "
+                app:showAsAction="never"/>
+            <item android:id="@+id/amt_rec"
+                android:title="Amount Recieving "
+                app:showAsAction="never"/>
+            <item android:id="@+id/amt_pen"
+                android:title="Amount Pending"
+                app:showAsAction="never"/>
+
+
+
+        </menu>
+
+    </item>
+
+    <item
+        android:id="@+id/action_search"
+        android:title="Search"
+        android:icon="@drawable/ic_search_black_24dp"
+        app:showAsAction="always|collapseActionView"
+        android:orderInCategory="1"
+        app:actionViewClass="androidx.appcompat.widget.SearchView">
+
+    </item>
+
+
+
+
+
+
+
+</menu>

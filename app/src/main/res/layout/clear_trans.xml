@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_margin="12dp"
+    android:padding="8dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Clear Transaction"
+        android:textColor="@color/colorAccent"
+        android:textSize="25dp"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:textSize="17dp"
+            android:text="Payment Method" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <RadioButton
+                android:id="@+id/radioButton_gpay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="Google Pay"
+                android:textColor="@color/colorAccent" />
+
+            <RadioButton
+                android:id="@+id/radioButton_other"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Other"
+                android:textColor="@color/colorAccent" />
+        </RadioGroup>
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+
+
+
+        <Button
+            android:id="@+id/button_clear_partial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/ButtonBorder.Accent"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="20dp"
+            android:textAllCaps="false"
+            android:text="Partial" />
+
+        <Button
+            android:id="@+id/button_clear_full"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:text="Full" />
+    </LinearLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textinput1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:hint="Amount"
+        android:textSize="15dp"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="@color/colorAccent"
+        android:padding="15dp"
+        android:visibility="gone">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editText_clear_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:visibility="gone"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <!--        <EditText-->
+    <!--            android:id="@+id/editText_amount"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:hint="Amount"-->
+    <!--            android:textSize="15dp"-->
+    <!--            android:textColor="@color/black"-->
+    <!--            android:textColorHint="@color/hint_color"-->
+    <!--            android:layout_margin="20sp"-->
+    <!--            android:gravity="center"/>-->
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textinput2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Description"
+        android:textSize="15dp"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="@color/colorAccent"
+        android:layout_marginTop="0dp"
+        android:padding="10dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="40"
+        android:visibility="gone"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:visibility="gone"
+            android:id="@+id/editText_clear_description"
+            android:maxLength="40"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+<!--    <EditText-->
+<!--        android:id="@+id/editText_clear_amount"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_margin="20sp"-->
+<!--        android:gravity="center"-->
+<!--        android:hint="Amount"-->
+<!--        android:visibility="gone"-->
+<!--        android:inputType="number"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textColorHint="@color/hint_color"-->
+<!--        android:textSize="15dp" />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/editText_clear_description"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_margin="20sp"-->
+<!--        android:gravity="center"-->
+<!--        android:visibility="gone"-->
+<!--        android:hint="Description"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textColorHint="@color/hint_color"-->
+<!--        android:textSize="15dp" />-->
+
+    <Button
+        android:id="@+id/button_clear"
+        android:layout_width="200dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape"
+        android:gravity="center"
+        android:text="Clear Transaction"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+</LinearLayout>

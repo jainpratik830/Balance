@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="20dp"
+
+    android:padding="15dp">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Here is your Invite Code"
+        android:textColor="@color/colorAccent"
+        android:textSize="27dp"
+        android:layout_marginTop="0dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/editText_inviteCode"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textColorHint="@color/hint_color"
+            android:textSize="16dp"
+            android:layout_margin="15dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/copy_imageView"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                app:srcCompat="@drawable/copy"
+                android:tint="@color/colorAccent"/>
+
+            <ImageView
+                android:id="@+id/share_imageView"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                app:srcCompat="@drawable/share"
+                android:tint="@color/colorAccent"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/editText_display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="Send it to your friends to let them add you or add your friends form their invite code through add friends option"
+        android:textColor="@color/hint_color"
+        android:textColorHint="@color/hint_color"
+        android:textSize="13dp" />
+
+
+
+</LinearLayout>
+

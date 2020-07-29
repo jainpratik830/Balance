@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:paddingTop="25dp"
+    android:paddingBottom="25dp"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:background="@color/white">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Add Transaction"
+        android:textColor="@color/colorAccent"
+        android:textSize="25dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="15dp"/>
+
+<!--    <EditText-->
+<!--        android:id="@+id/editText_add_amount"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_margin="20sp"-->
+<!--        android:gravity="center"-->
+<!--        android:hint="Amount"-->
+<!--        android:inputType="number"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textColorHint="@color/hint_color"-->
+<!--        android:textSize="15dp" />-->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/outlinedTextField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Amount"
+        android:textSize="15dp"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="@color/colorAccent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="15dp"
+        app:helperText="*Required"
+        app:helperTextEnabled="true"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editText_add_amount_expense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+android:textColor="@color/colorAccent"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <!--        <EditText-->
+    <!--            android:id="@+id/editText_amount"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:hint="Amount"-->
+    <!--            android:textSize="15dp"-->
+    <!--            android:textColor="@color/black"-->
+    <!--            android:textColorHint="@color/hint_color"-->
+    <!--            android:layout_margin="20sp"-->
+    <!--            android:gravity="center"/>-->
+
+
+
+
+
+    <Spinner
+        android:id="@+id/spinner_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        />
+<!--        android:spinnerMode="dropdown"-->
+<!--        android:popupBackground="@color/white"-->
+
+
+
+<!--    <com.google.android.material.chip.ChipGroup-->
+<!--        android:id="@+id/chipgroup_category"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="40dp"-->
+<!--        android:layout_margin="20dp" />-->
+<!--    <EditText-->
+<!--        android:id="@+id/editText_add_description"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_margin="20sp"-->
+<!--        android:gravity="center"-->
+<!--        android:hint="Description"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textColorHint="@color/hint_color"-->
+<!--        android:textSize="15dp" />-->
+
+    <TextView
+        android:id="@+id/textView_expense_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:visibility="gone"
+        android:textAlignment="viewEnd"
+        android:paddingRight="20dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/outlinedTextField2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Notes"
+        android:textSize="15dp"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="@color/colorAccent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="40"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editText_add_description_expense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:maxLength="40"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/button_addnew_expense"
+        android:layout_width="200dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape"
+        android:gravity="center"
+        android:text="Add Transaction"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+</LinearLayout>
+

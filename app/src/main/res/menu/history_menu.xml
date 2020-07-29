@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <item
+        android:id="@+id/spinner_sort"
+        android:icon="@drawable/ic_sort"
+        android:title="Sort"
+        app:showAsAction="ifRoom"
+        android:orderInCategory="100">
+
+        <menu>
+
+            <item android:id="@+id/sort_by"
+                android:title="Sort By"
+                app:showAsAction="never"/>
+            <item android:id="@+id/date_asc"
+                android:title="Date (Asc) "
+                app:showAsAction="never"/>
+            <item android:id="@+id/date_desc"
+                android:title="Date (Desc) "
+                app:showAsAction="never"/>
+            <item android:id="@+id/amt_rec"
+                android:title="Amount Recieved"
+                app:showAsAction="never"/>
+            <item android:id="@+id/amt_pen"
+                android:title="Amount Paid"
+                app:showAsAction="never"/>
+
+
+
+        </menu>
+
+    </item>
+
+
+
+
+
+
+
+</menu>
